@@ -1,5 +1,5 @@
-import React,{Suspense, useEffect } from 'react'
-import { BrowserRouter as Router, Route, Link, Routes, Navigate } from "react-router-dom";
+import React,{Suspense} from 'react'
+import { Route, Routes, Navigate } from "react-router-dom";
 import Cookies from 'universal-cookie';
 import { useNavigate } from "react-router-dom";
 
@@ -10,7 +10,6 @@ const AddAddress = React.lazy(() => import("pages/AddAddress"));
 
 const Routers = () =>  {
     const cookies = new Cookies();
-    let navigate = useNavigate();
     let user =  cookies.get('userdata')
     console.log("user",user);
     return (
