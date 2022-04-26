@@ -1,0 +1,156 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+html,body,#root{height: 100%;}
+// common CSS
+p{font-size: 14px;}
+.text_center{text-align: center;}
+.container{max-width: 1200px;padding: 0 15px;width: 100%;margin: 0 auto;}
+.d_flex{display: flex;}
+.flex_wrap{flex-wrap: wrap;}
+.jus_center{justify-content: center;}
+.jus_spbtw{justify-content: space-between;}
+.align_center{align-items: center;}
+.pointer{cursor: pointer;}
+a{
+    color: $black;
+    text-decoration: none;
+}
+.bglight{  background: $bglight;}
+.srv-validation-message{color: $error;}
+.btn_primary{
+    width: 100%;
+    border: none;
+    background: $black;
+    color: $white;
+    padding: 10px;
+    cursor: pointer;
+}
+// popup
+.popup_overlay{
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    .popup{
+        padding: 15px;
+        background: $white;
+        max-width: 300px;
+        width: 100%;
+        text-align: center;
+        .btn_wrp{
+            margin-top: 15px;
+        }
+        button{
+            background: none;
+            padding:10px 15px;
+            border: 1px solid;
+            margin: 0 10px;
+            cursor: pointer;
+            &:hover{
+                background: $black;
+                color: $white;
+            }
+        }
+    }
+}
+// Header CSS
+.header_wrap{
+    padding: 10px 0;
+    a{
+        margin: 0 10px;
+        &:hover{
+            color: $linkhover;
+        }
+    }
+}
+
+// Footer Css
+.footer_wrap {
+    padding: 10px 0;
+}
+
+// Page
+.page_content{
+    height: calc(100vh - 102px);
+    position: relative;
+    overflow: auto;
+}
+.login_header{padding: 25px 0;}
+.field_row{
+    margin-bottom: 15px;
+    label{
+        display: block;
+    }
+    input, textarea, select{
+        border: none;
+        padding: 10px 15px;
+        width: 100%;
+    }
+}
+.field_two{
+    .field_row{
+        width: 49%;
+    }
+}
+.login_box{
+    padding: 15px;
+    max-width: 360px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    input{
+        padding: 10px;
+        border: none;
+        width: 100%;
+    }
+    button{
+        width: 100%;
+        border: none;
+        background: $black;
+        color: $white;
+        padding: 10px;
+        cursor: pointer;
+    }
+}
+
+// Address Row
+.search_row{
+    max-width: 360px;
+    margin: 0 auto 30px;
+    .field_row{
+        input{
+            border: none;
+            padding: 10px 15px;
+            width: 100%;
+        }
+    }
+}
+.add_wrap{padding-top: 30px;}
+.address_box{
+    padding: 15px;
+    max-width: 250px;
+    width: 100%;
+    margin: 15px;
+}
+.button_wrapper{
+    padding-top: 25px;
+    a{
+        padding: 15px 20px;
+        background: $black;
+        color: $white;
+        display: inline-block;
+    }
+}
+// add address
+.address_title{margin: 25px 0;}
+.address_boxform{
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    &_id{
+        margin-bottom: 15px;
+    }
+}
