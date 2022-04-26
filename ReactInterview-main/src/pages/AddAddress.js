@@ -28,16 +28,16 @@ function AddAddress() {
                 telephone:''
             }
     )
+    let getdata = cookies.get('addressData');
 
     useEffect(() => {
-        let getdata = cookies.get('addressData');
         if(getdata) setaddArray(getdata);
         if(id){
             let EditData = getdata.find(o => o.id === Number(id));
             console.log("EditData", EditData);
             setAddress(EditData)
         } 
-    }, [addArray,id])
+    }, [address,addArray])
     
     const SubmitAddress = (e) => {
         e.preventDefault()
