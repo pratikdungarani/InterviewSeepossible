@@ -37,7 +37,7 @@ function AddAddress() {
             console.log("EditData", EditData);
             setAddress(EditData)
         } 
-    }, [getdata,id])
+    }, [addArray,id])
     
     const SubmitAddress = (e) => {
         e.preventDefault()
