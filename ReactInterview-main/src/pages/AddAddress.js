@@ -29,7 +29,6 @@ function AddAddress() {
             }
     )
     let getdata = cookies.get('addressData');
-
     useEffect(() => {
         if(getdata) setaddArray(getdata);
         if(id){
@@ -37,7 +36,7 @@ function AddAddress() {
             console.log("EditData", EditData);
             setAddress(EditData)
         } 
-    }, [address,addArray])
+    }, [getdata,id])
     
     const SubmitAddress = (e) => {
         e.preventDefault()
