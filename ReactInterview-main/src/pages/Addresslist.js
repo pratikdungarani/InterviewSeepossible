@@ -12,13 +12,12 @@ const Addresslist = () => {
     const [deleteId, setdeleteId] = useState()
     const [search, setsearch] = useState('')
     const getAddData = cookies.get('addressData');
-    console.log("getAddData",getAddData);
     useEffect(() => {
         if(getAddData){
             setaddArr(getAddData)
             setcopyaddarr(getAddData)
         }
-    }, [])
+    }, [getAddData])
     
     const handleSearch = (e) => {
         setsearch(e?.target?.value)
