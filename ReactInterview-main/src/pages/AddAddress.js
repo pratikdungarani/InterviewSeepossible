@@ -37,7 +37,7 @@ function AddAddress() {
             console.log("EditData", EditData);
             setAddress(EditData)
         } 
-    }, [cookies,id])
+    }, [getdata,id])
     
     const SubmitAddress = (e) => {
         e.preventDefault()
