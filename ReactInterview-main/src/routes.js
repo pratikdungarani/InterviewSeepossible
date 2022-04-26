@@ -1,7 +1,6 @@
 import React,{Suspense} from 'react'
 import { Route, Routes, Navigate } from "react-router-dom";
 import Cookies from 'universal-cookie';
-import { useNavigate } from "react-router-dom";
 
 const Login = React.lazy(() => import("pages/Login"));
 const MainLayout = React.lazy(() => import("mainlayout/MainLayout"));

@@ -30,22 +30,17 @@ const Addresslist = () => {
             setcopyaddarr(addarr)
         }
     }
-
-    useEffect(() => {
-
-    }, [])
     
     const handleDelete = (id) => {
         console.log("id", id);
         setdeleteId(id)
         setmodal(true)
-        
     }
     const Cancleclick = () => {
         setmodal(false)
     }
     const DeleteYesClick = () => {
-        let delArray =   copyaddarr.filter(item => item?.id != deleteId )
+        let delArray =   copyaddarr.filter(item => item?.id !== deleteId )
         setcopyaddarr(delArray)
         cookies.set('addressData',delArray, { path: '/' } )
         setmodal(false)

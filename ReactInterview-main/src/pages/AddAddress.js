@@ -32,7 +32,6 @@ function AddAddress() {
     useEffect(() => {
         let getdata = cookies.get('addressData');
         if(getdata) setaddArray(getdata);
-        console.log("getdata", getdata);
         if(id){
             let EditData = getdata.find(o => o.id === Number(id));
             console.log("EditData", EditData);

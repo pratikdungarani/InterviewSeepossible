@@ -16,7 +16,7 @@ export default function Hader() {
             <div className='container'>
                 <div className='header_row d_flex jus_spbtw align_center'>
                     <div className='logo'>
-                        <img src='/logo192.png' alt='logo' width="100" width="40" />
+                        <img src='/logo192.png' alt='logo' width="40" />
                     </div>
                     <div className='header_nav'>
                         {
